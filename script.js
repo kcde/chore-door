@@ -3,6 +3,8 @@ let doorImage1 = document.getElementById("door1");
 let doorImage2 = document.getElementById("door2");
 let doorImage3 = document.getElementById("door3");
 let startButton = document.getElementById("start");
+let current = document.getElementById("current");
+let best = document.getElementById("best");
 // Door paths
 let botDoorPath =
   "https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/robot.svg";
@@ -22,6 +24,17 @@ let numClosedDoors = 3;
 let openDoor1 = "";
 let openDoor2 = "";
 let openDoor3 = "";
+let bestScore = 0;
+let currentScore = 0;
+
+const scoreKeeper = () => {
+  currentScore += 1;
+  if (currentScore >= bestScore) {
+    bestScore = currentScore;
+  }
+  best.innerHTML = bestScore;
+  current.innerHTML = currentScore;
+};
 
 const isBot = (door) => {
   if (door.src === botDoorPath) {
@@ -51,8 +64,11 @@ const playDoor = (door) => {
   numClosedDoors--;
   if (numClosedDoors === 0) {
     gameOver("win");
+    scoreKeeper();
   } else if (isBot(door)) {
     gameOver();
+    currentScore = 0;
+    current.innerHTML = currentScore;
   }
 };
 const randomChoreDoorGenerator = () => {

@@ -52,3 +52,27 @@ body {
   margin-bottom: 21px;
   cursor: pointer;
 }
+
+#score {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.score-board {
+  width: 70px;
+  height: 60px;
+  background-color: #00ffff;
+  color: black;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+}

@@ -2,53 +2,53 @@ body {
   background-color: #010165;
   margin: 0px;
 }
-.header{
+.header {
   background-color: #00ffff;
   text-align: center;
 }
-.title-row{
+.title-row {
   margin-top: 42px;
   margin-bottom: 21px;
   text-align: center;
 }
-.instruction-title{
+.instruction-title {
   display: inline;
   font-size: 18px;
   color: #00ffff;
-  font-family: 'Work Sans'
+  font-family: "Work Sans";
 }
-.instruction-number{
+.instruction-number {
   padding-right: 25px;
-  font-family: 'Work Sans';
+  font-family: "Work Sans";
   font-size: 36px;
   color: #00ffff;
 }
-.instruction-text{
+.instruction-text {
   padding: 10px;
-  font-family: 'Work Sans';
+  font-family: "Work Sans";
   font-size: 14px;
   color: #fff;
 }
-.instruction-row{
+.instruction-row {
   margin: 0 auto;
   width: 400px;
 }
-.door-row{
+.door-row {
   text-align: center;
 }
-.door-frame{
+.door-frame {
   cursor: pointer;
   padding: 10px;
 }
-.start-row{
+.start-row {
   margin: auto;
   width: 120px;
   height: 43px;
-  font-family: 'Work Sans';
+  font-family: "Work Sans";
   background: #eb6536;
   padding-top: 18px;
   font-size: 18px;
   text-align: center;
   margin-bottom: 21px;
-  cursor: pointer
+  cursor: pointer;
 }
